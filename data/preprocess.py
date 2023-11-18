@@ -17,7 +17,7 @@ def write_to_gsv(data, path):
     # write csv with '\t' as delimiter
     with open(path, 'w') as f:
         for line in data:
-            f.write('[|||]'.join(line) + '\n')
+            f.write('{{}}'.join(line) + '\n')
 
 def read_answers(path):
     """_summary_
@@ -66,6 +66,7 @@ def main(**kwargs):
                 if c not in file_tokenizers:
                     tmp_text += c
                 else:
+                    tmp_text = tmp_text.strip()
                     if tmp_text:
                         if c != '\n':
                             tmp_text += c
@@ -79,7 +80,7 @@ def main(**kwargs):
                         if not is_got_answer:
                             data_inline.append([file.replace(".txt", ""), str(tmp_text_starti), tmp_text, "PHI: NULL"])
                         
-                        tmp_text, tmp_text_starti = "", i+1
+                    tmp_text, tmp_text_starti = "", i+1
 
     write_to_gsv(data_inline, f"./{kwargs['split']}.gsv")
                     
