@@ -102,6 +102,7 @@ def Main():
     device = torch.device(args.device if torch.cuda.is_available() else "cpu")
     sub_size = args.subdataset_size
     exp_name = args.exp_name
+    print(f"Experiment Name: {exp_name}")
     print(f"Device: {device}")
 
     dataset = getTrainDataset()

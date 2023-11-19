@@ -3,7 +3,7 @@ from argparse import ArgumentParser
 def parse_args():
     parser = ArgumentParser()
     parser.add_argument(
-        "exp_name", "-n",
+        "--exp_name", "-n",
         type=str, default="exp",
         help="Experiment name.")
     
