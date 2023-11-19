@@ -101,6 +101,7 @@ def Main():
     args = parse_args()
     device = torch.device(args.device if torch.cuda.is_available() else "cpu")
     sub_size = args.subdataset_size
+    exp_name = args.exp_name
     print(f"Device: {device}")
 
     dataset = getTrainDataset()
@@ -119,9 +120,9 @@ def Main():
 
     trainModel(model, dataloader, optimizer, args.epoch, device)
     # save model
-    model.save_pretrained("./model")
+    model.save_pretrained(f"./models/{exp_name}")
     
-    writeValidPredictions(model, tokenizer)
+    writeValidPredictions(model, tokenizer, path = f"./submissions/{exp_name}.txt")
 
 if __name__ == "__main__":
     Main()
