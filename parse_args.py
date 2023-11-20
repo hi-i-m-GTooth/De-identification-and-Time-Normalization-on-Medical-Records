@@ -41,3 +41,23 @@ def parse_args():
     
     return args
 
+def parse_args_post():
+    parser = ArgumentParser()
+    parser.add_argument(
+        "--answer_file", "-a",
+        type=str, default=None,
+        help="Answer file path.")
+    
+    parser.add_argument(
+        "--result_file", "-r",
+        type=str, default=None,
+        help="Result file path.")
+    
+    parser.add_argument(
+        "--file_dir", "-fd",
+        type=str, default="raw_data/valid/dataset",
+        help="File directory.")
+    
+    args = parser.parse_args()
+    
+    return args
