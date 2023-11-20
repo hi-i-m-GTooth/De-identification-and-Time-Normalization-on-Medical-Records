@@ -23,6 +23,11 @@ def parse_args():
         help="Epoch.")
 
     parser.add_argument(
+        "--save_epoch", "-se",
+        type=int, default=0,
+        help="Save model every save_epoch epochs. 0 means no saving except final model.")
+
+    parser.add_argument(
         "--lr",
         type=float, default=3e-5,
         help="Learning rate.")
