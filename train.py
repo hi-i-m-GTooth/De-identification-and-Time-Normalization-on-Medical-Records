@@ -73,8 +73,11 @@ def trainModel(model, dataloader, valid_dataloader, optimizer, epoch, device, ex
     # log time in YYYY-MM-DD HH:MM:SS
     print(f"{Fore.GREEN}Start Training, Date Time: {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}{Style.RESET_ALL}")
     prev_time = start_time
-    for ep in trange(epoch, desc="Epoch"):
-        log_str = f"{Fore.WHITE}{Back.LIGHTGREEN_EX}[Epoch {ep+1}/{epoch}]{Style.RESET_ALL} "
+    progress_bar = trange(epoch, desc="Epoch")
+
+    for ep in progress_bar:
+        progress_bar.set_description(f"{Fore.WHITE}{Back.LIGHTGREEN_EX}[Epoch {ep+1}/{epoch}]{Style.RESET_ALL}")
+        log_str = ""
         total_loss = 0
         # Training loop
         predictions , true_labels = [], []
