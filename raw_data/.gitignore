@@ -1,6 +1,5 @@
 *
 !.gitignore
-!zips
-zips/*
 !download.sh
 !rm_download.sh
+!zips
