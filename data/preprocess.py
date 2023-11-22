@@ -1,4 +1,5 @@
 import os
+import re
 from collections import defaultdict
 from tqdm import tqdm
 
@@ -8,6 +9,8 @@ cur_path = os.path.abspath(__file__)
 cur_dir = os.path.dirname(cur_path)
 os.chdir(cur_dir)
 
+TIMES_CATES = ["DATE", "TIME", "DURATION", "SET"]
+FILE_TOKENIZERS = ['\.  ', '\n']
 raws = {
     "train": ["first", "second"], 
     "valid": ["valid"],
@@ -36,18 +39,29 @@ def read_answers(path):
     lines = [line.strip().split('\t') for line in lines]
     for l in lines:
         file_name, cate, start, end, text = l[0], l[1], l[2], l[3], l[4]
+        text2 = l[5] if cate in TIMES_CATES else ""
         rlt[file_name].append({
             "cate": cate,
             "start": int(start),
             "end": int(end),
             "text": text,
+            "text2": text2,
         })
     
     return rlt
 
+def getBreakPoints(doc):
+    break_points  = []
+    for tokenizer in FILE_TOKENIZERS:
+        break_points += [m.start() for m in re.finditer(tokenizer, doc)]
+    break_points = sorted(break_points)
+    break_points = [0] + break_points + [len(doc)]
+
+    return break_points
+
 def main(**kwargs):
     data_inline = []
-    file_tokenizers = ['.', '\n']
+    
 
     for dir in raws[kwargs["split"]]:
         dir_full_path = f"../raw_data/{dir}/dataset"
@@ -59,28 +73,34 @@ def main(**kwargs):
             with open(file_full_path, 'r') as f:
                 doc = f.read()
             
+            break_points = getBreakPoints(doc)
+
             answers_in_file = answers[file.replace(".txt", "")]
             ans_index = 0
-            tmp_text, tmp_text_starti = "", 0
-            for i, c in enumerate(doc):
-                if c not in file_tokenizers:
-                    tmp_text += c
+
+            for bp_i in range(len(break_points)-1):
+                bp, bp_end = break_points[bp_i], break_points[bp_i+1]
+                tmp_text = doc[bp+1:bp_end]
+                tmp_text_starti = bp+1
+
+                if tmp_text.strip() == '':
+                    continue
+                is_got_answer, anses = False, []
+                while ans_index < len(answers_in_file) and \
+                    bp <= answers_in_file[ans_index]["start"] and bp_end >= answers_in_file[ans_index]["end"]:
+                    anses.append(answers_in_file[ans_index])
+                    ans_index += 1
+                    is_got_answer = True
+                if not is_got_answer:
+                    data_inline.append([file.replace(".txt", ""), str(tmp_text_starti), tmp_text, "PHI: NULL"])
                 else:
-                    tmp_text = tmp_text.strip()
-                    if tmp_text:
-                        if c != '\n':
-                            tmp_text += c
-                        is_got_answer = False
-                        while ans_index < len(answers_in_file) and \
-                            tmp_text_starti <= answers_in_file[ans_index]["start"] and \
-                                answers_in_file[ans_index]["end"] <= i:
-                            data_inline.append([file.replace(".txt", ""), str(tmp_text_starti), tmp_text, f"{answers_in_file[ans_index]['cate']}: {answers_in_file[ans_index]['text']}"])
-                            ans_index += 1
-                            is_got_answer = True
-                        if not is_got_answer:
-                            data_inline.append([file.replace(".txt", ""), str(tmp_text_starti), tmp_text, "PHI: NULL"])
-                        
-                    tmp_text, tmp_text_starti = "", i+1
+                    final_ans = []
+                    for ans in anses:
+                        if ans['cate'] in TIMES_CATES:
+                            final_ans.append(f"{ans['cate']}: {ans['text']}=>{ans['text2']}")
+                        else:
+                            final_ans.append(f"{ans['cate']}: {ans['text']}")
+                    data_inline.append([file.replace(".txt", ""), str(tmp_text_starti), tmp_text, r"\n".join(final_ans)])
 
     write_to_gsv(data_inline, f"./{kwargs['split']}.gsv")
                     
