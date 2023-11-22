@@ -61,3 +61,17 @@ def parse_args_post():
     args = parser.parse_args()
     
     return args
+
+def parse_args_infer():
+    parser = ArgumentParser()
+    parser.add_argument(
+        "--model_dir", "-md",
+        type=str, default=None,)
+    
+    parser.add_argument(
+        "--output_dir", "-od",
+        type=str, default=None,)
+    
+    args = parser.parse_args()
+    
+    return args
