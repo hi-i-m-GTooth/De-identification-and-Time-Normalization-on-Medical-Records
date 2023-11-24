@@ -8,6 +8,26 @@ def parse_args():
         help="Experiment name.")
     
     parser.add_argument(
+        "--model_name", "-mn",
+        type=str, default="EleutherAI/pythia-410m",
+        help="Model name.")
+    
+    parser.add_argument(
+        "--revision", "-r",
+        type=str, default="step3000",
+        help="Revision.")
+
+    parser.add_argument(
+        "--train_file", "-tf",
+        type=str, default="train.gsv",
+    )
+
+    parser.add_argument(
+        "--valid_file", "-vf",
+        type=str, default="valid.gsv",
+    )
+
+    parser.add_argument(
         "--subdataset_size", 
         type=int, default=20000, 
         help="Number of samples in each subdataset.")

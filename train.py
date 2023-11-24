@@ -24,21 +24,20 @@ cur_path = os.path.abspath(__file__)
 cur_dir = os.path.dirname(cur_path)
 os.chdir(cur_dir)
 
-PLM = "EleutherAI/pythia-70m"
+PLM = "EleutherAI/pythia-410m"
 REVISION = "step3000"
 VALID_BATCH_SIZE = 32
 
-def getTrainDataset():
-    dataset = load_dataset("csv", data_files="./data/train.gsv", delimiter='{{}}',
+def getTrainDataset(file_name = "train.gsv"):
+    dataset = load_dataset("csv", data_files=f"./data/{file_name}", delimiter='{{}}',
                            features = Features({
                                'fid': Value('string'), 'idx': Value('int64'),
                                'content': Value('string'), 'label': Value('string')}),
                                column_names=['fid', 'idx', 'content', 'label'], keep_default_na=False)
-    
     return dataset
 
-def getValidDataset():
-    valid_data = load_dataset("csv", data_files="./data/valid.gsv", delimiter='{{}}',
+def getValidDataset(file_name = "valid.gsv"):
+    valid_data = load_dataset("csv", data_files=f"./data/{file_name}", delimiter='{{}}',
                     features = Features({
                     'fid': Value('string'), 'idx': Value('int64'),
                     'content': Value('string'), 'label': Value('string')}),
@@ -115,7 +114,7 @@ def trainModel(model, dataloader, valid_dataloader, optimizer, epoch, device, ex
                 avg_valid_loss = total_loss / len(valid_dataloader)
                 log_str += f" Average valid loss: {Fore.CYAN}{round(avg_valid_loss, 7):<10}{Style.RESET_ALL}"
             
-            model.save_pretrained(f"./models/{exp_name}/{exp_name}_{ep}")
+            model.save_pretrained(f"./models/{exp_name}/{exp_name}_{ep+1}")
 
         cur_time = time.time()
         log_str += f" Time: {Fore.YELLOW}{int((cur_time - prev_time) / 60)}m {int((cur_time - prev_time)%60)}s{Style.RESET_ALL} Date Time: {Fore.YELLOW}{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}{Style.RESET_ALL}"
@@ -152,8 +151,12 @@ def Main():
     print(f"Experiment Name: {exp_name}")
     print(f"Device: {device}")
 
-    dataset = getTrainDataset()
-    valid_dataset = getValidDataset()
+    global PLM, REVISION
+    PLM = args.model_name
+    REVISION = args.revision
+
+    dataset = getTrainDataset(args.train_file)
+    valid_dataset = getValidDataset(args.valid_file)
 
     if sub_size == -1:
         sub_size = len(dataset['train'])
