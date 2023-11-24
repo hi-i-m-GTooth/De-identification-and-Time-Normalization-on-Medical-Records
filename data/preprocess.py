@@ -11,7 +11,7 @@ os.chdir(cur_dir)
 
 TIMES_CATES = ["DATE", "TIME", "DURATION", "SET"]
 FILE_TOKENIZERS = ['\.  ', '\n']
-PREFIX_NUM = 5
+PREFIX_NUM = 0
 raws = {
     "train": ["first", "second"], 
     "valid": ["valid"],
