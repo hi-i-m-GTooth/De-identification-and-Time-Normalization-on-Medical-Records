@@ -10,8 +10,8 @@ import torch
 from torch.utils.data import DataLoader
 from torch.optim import AdamW
 
-from islab.aicup import collate_batch_with_prompt_template, OpenDeidBatchSampler
-from islab.aicup import aicup_predict
+from gaicup import collate_batch_with_prompt_template, OpenDeidBatchSampler
+from gaicup import aicup_predict
 
 from datasets import load_dataset, Features, Value
 from transformers import AutoConfig
@@ -126,12 +126,16 @@ def trainModel(model, dataloader, valid_dataloader, optimizer, epoch, device, ex
     print(log_str)
     print(f"{Fore.GREEN}Finish Date Time: {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}{Style.RESET_ALL}")
 
-def writeValidPredictions(model, tokenizer, path = "./submissions/test_answer.txt"):
-    valid_data = load_dataset("csv", data_files="./data/examples/opendid_valid.tsv", delimiter='\t',
-                    features = Features({
-                    'fid': Value('string'), 'idx': Value('int64'),
-                    'content': Value('string'), 'label': Value('string')}),
-                    column_names=['fid', 'idx', 'content', 'label'])
+def writeValidPredictions(model, tokenizer, path = "./submissions/test_answer.txt", dataset = None, delimiter = '\t'):
+    if not dataset:
+        valid_data = load_dataset("csv", data_files="./data/examples/opendid_valid.tsv", delimiter='\t',
+                        features = Features({
+                        'fid': Value('string'), 'idx': Value('int64'),
+                        'content': Value('string'), 'label': Value('string')}),
+                        column_names=['fid', 'idx', 'content', 'label'])
+    else:
+        valid_data = getValidDataset(dataset)
+    
     valid_list = list(valid_data['train'])
 
     with open(path, 'w', encoding='utf8') as f:

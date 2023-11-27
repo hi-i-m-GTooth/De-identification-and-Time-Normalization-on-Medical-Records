@@ -14,7 +14,7 @@ def main():
     model.resize_token_embeddings(len(tokenizer))
     model.eval()
     model.to('cuda:0')
-    writeValidPredictions(model, tokenizer, path = os.path.join(args.output_dir, "answer.txt"))
+    writeValidPredictions(model, tokenizer, path = os.path.join(args.output_dir, "answer.txt"), dataset = args.infer_file)
 
 if __name__ == "__main__":
     main()
