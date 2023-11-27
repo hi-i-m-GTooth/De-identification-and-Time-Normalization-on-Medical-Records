@@ -92,6 +92,26 @@ def parse_args_infer():
         "--output_dir", "-od",
         type=str, default=None,)
     
+    parser.add_argument(
+        "--infer_file", "-if",
+        type=str, default=None,)
+    
+    args = parser.parse_args()
+    
+    return args
+
+def parse_args_metrics():
+    parser = ArgumentParser()
+    parser.add_argument(
+        "--label_file", "-l",
+        type=str, default=None,
+        help="label file path.")
+    
+    parser.add_argument(
+        "--predict_file", "-p",
+        type=str, default=None,
+        help="predict file path.")
+    
     args = parser.parse_args()
     
     return args
