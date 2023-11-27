@@ -1,0 +1,11 @@
+*
+!preprocess.py
+!run_preprocess.sh
+!cate.txt
+!train.gsv
+!valid.gsv
+!split_de_norm.py
+!train_de.gsv
+!train_norm.gsv
+!valid_de.gsv
+!valid_norm.gsv

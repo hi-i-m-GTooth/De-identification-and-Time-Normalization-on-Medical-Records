@@ -121,7 +121,7 @@ def main(**kwargs):
     if PREFIX_NUM == 0:
         write_to_gsv(data_inline, f"./{kwargs['split']}.gsv")
     else:
-        write_to_gsv(data_inline, f"./{kwargs['split']}_prefix.gsv")
+        write_to_gsv(data_inline, f"./{kwargs['split']}_{PREFIX_NUM}prefix.gsv")
                     
 if __name__ == "__main__":
     print("[Preprocess] train.gsv start.")
