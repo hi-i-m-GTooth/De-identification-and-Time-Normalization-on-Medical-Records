@@ -28,6 +28,14 @@ bash run_infer.sh
 ```
 
 ## 5. Post Process (Unused for Now)
+Don't forget to set up parameters properly.
 ```
 bash run_post.sh
+```
+
+## 6. Evaluate
+Don't forget to set up parameters properly (you could also directly set up params through `[PATH_TO_PREDICTION_FILE]` in cmdline).  
+Given your prediction `answer.txt`, this command will show you *Precision*, *Recall*, and *Macro F1* for each PHI cate.
+```
+bash run_metrics.sh [PATH_TO_PREDICTION_FILE]
 ```
