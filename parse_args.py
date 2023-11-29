@@ -106,6 +106,14 @@ def parse_args_infer():
         "--infer_file", "-if",
         type=str, default=None,)
     
+    parser.add_argument(
+        "--device", "-d",
+        type=str, default="cuda:0",)
+    
+    parser.add_argument(
+        "--batch_size", "-b",
+        type=int, default=32,)
+    
     args = parser.parse_args()
     
     return args

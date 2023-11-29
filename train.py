@@ -145,7 +145,7 @@ def trainModel(model, dataloader, valid_dataloader, optimizer, scheduler, epoch,
         log_f.write(log_str.replace(f"{Fore.CYAN}", "").replace(f"{Fore.BLUE}", "").replace(f"{Style.RESET_ALL}", "").replace(f"{Fore.YELLOW}", "").replace(f"{Fore.GREEN}", "") + '\n')
         log_f.close()
 
-def writeValidPredictions(model, tokenizer, path = "./submissions/test_answer.txt", dataset = None, delimiter = '\t'):
+def writeValidPredictions(model, tokenizer, path = "./submissions/test_answer.txt", dataset = None, delimiter = '\t', batch_size = VALID_BATCH_SIZE):
     if not dataset:
         valid_data = load_dataset("csv", data_files="./data/examples/opendid_valid.tsv", delimiter='\t',
                         features = Features({
@@ -158,9 +158,9 @@ def writeValidPredictions(model, tokenizer, path = "./submissions/test_answer.tx
     valid_list = list(valid_data['train'])
 
     with open(path, 'w', encoding='utf8') as f:
-        for i in tqdm(range(0, len(valid_list), VALID_BATCH_SIZE)):
+        for i in tqdm(range(0, len(valid_list), batch_size)):
             with torch.no_grad():
-                seeds = valid_list[i:i+VALID_BATCH_SIZE]
+                seeds = valid_list[i:i+batch_size]
                 outputs = aicup_predict(model, tokenizer, input=seeds)
                 for o in outputs:
                     f.write(o)
