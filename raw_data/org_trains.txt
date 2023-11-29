@@ -1,0 +1,134 @@
+file8491{{}}4236{{}}Immunostains for MSI proteins (Pacific Mutual ANTENATAL WARD; block: A18){{}}ORGANIZATION: Pacific Mutual\nDEPARTMENT: ANTENATAL WARD
+569{{}}3252{{}}HER2 SISH:Performed at Fortune Brands, SUNSHINE COAST UNIVERSITY HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Fortune Brands\nHOSPITAL: SUNSHINE COAST UNIVERSITY HOSPITAL
+file19974{{}}7326{{}}Immunostains for MSI proteins (McGraw-Hill CPC Pathology; block: A7){{}}ORGANIZATION: McGraw-Hill\nDEPARTMENT: CPC Pathology
+file6442{{}}3122{{}}Immunostains for MSI proteins (Hershey Company MEDIC/SURGERY WARD; block:  A6){{}}ORGANIZATION: Hershey Company\nDEPARTMENT: MEDIC/SURGERY WARD
+file17502{{}}137{{}}Possible serous carcinoma on uterine curettings in Dubbo but normal endometrium when reviewed by Delphi.{{}}ORGANIZATION: Delphi
+file5048{{}}9102{{}}Immunostains for MSI proteins (The Northwestern Mutual PARKES 8; block: A3){{}}ORGANIZATION: The Northwestern Mutual\nDEPARTMENT: PARKES 8
+file11140{{}}397{{}}Distribution:    CMS Energy Corporation{{}}ORGANIZATION: CMS Energy Corporation
+392{{}}5731{{}}Source of material:  The Pepsi, MOUNT ELIZA CENTRE{{}}ORGANIZATION: The Pepsi\nHOSPITAL: MOUNT ELIZA CENTRE
+file5396{{}}4500{{}}Immunostains for MSI proteins (Walt Disney ACT Genetic; block:A17){{}}ORGANIZATION: Walt Disney\nDEPARTMENT: ACT Genetic
+file4539{{}}4098{{}}Immunostains for MSI proteins (R.R. Donnelley South Eastern Area; block:D8){{}}ORGANIZATION: R.R. Donnelley\nDEPARTMENT: South Eastern Area
+31{{}}4344{{}}HER2 SISH:  Performed at R.R. Donnelley, FINLEY HOSPITAL & COMMUNITY HEALTH CARE Hospital, see separate report.{{}}ORGANIZATION: R.R. Donnelley\nHOSPITAL: FINLEY HOSPITAL & COMMUNITY HEALTH CARE
+76{{}}4118{{}}HER SISH:  Performed at Peter Kiewit Sons Central, NORMANTON HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Peter Kiewit Sons\nHOSPITAL: NORMANTON HOSPITAL
+file21548{{}}5524{{}}Immunostains for MSI proteins (Washington Mutual CPC Pathology; block:A11){{}}ORGANIZATION: Washington Mutual\nDEPARTMENT: CPC Pathology
+file18256{{}}8378{{}}Immunostains for MSI proteins (Owens & Minor CPC Pathology; block:  10){{}}ORGANIZATION: Owens & Minor\nDEPARTMENT: CPC Pathology
+file7135{{}}5477{{}}Immunostains for MSI proteins (Leggett & Platt ACUTECARE WARD; block: A6){{}}ORGANIZATION: Leggett & Platt\nDEPARTMENT: ACUTECARE WARD
+116{{}}3186{{}}HER2 SISH:  Performed at FPL Group, BALLINA DISTRICT HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: FPL Group\nHOSPITAL: BALLINA DISTRICT HOSPITAL
+file7234{{}}3240{{}}Immunostains for MSI proteins (Lyondell Chemical Molecular Oncology; block: A8){{}}ORGANIZATION: Lyondell Chemical\nDEPARTMENT: Molecular Oncology
+file10484{{}}426{{}}Distribution:    Molson Coors Brewing{{}}ORGANIZATION: Molson Coors Brewing
+file10725{{}}533{{}}erf ddfr3 lphaDistribution:    Coventry Health Care83962{{}}ORGANIZATION: Coventry Health Care
+file10161{{}}360{{}}Distribution:    WPS Resources{{}}ORGANIZATION: WPS Resources
+246{{}}2598{{}}HER2 SISH:  Performed at Avery Dennison, WARIALDA MULTIPURPOSE SERVICE Hospital, see separate report.{{}}ORGANIZATION: Avery Dennison\nHOSPITAL: WARIALDA MULTIPURPOSE SERVICE
+file18395{{}}6803{{}}Immunostains for MSI proteins (PepsiCo CPC Pathology; block:A13  ){{}}ORGANIZATION: PepsiCo\nDEPARTMENT: CPC Pathology
+file18395{{}}7429{{}}Immunostains for MSI proteins (Newell Rubbermaid CPC Pathology; block:A13  ){{}}ORGANIZATION: Newell Rubbermaid\nDEPARTMENT: CPC Pathology
+file8408{{}}4926{{}}Immunostains for MSI proteins (HCA Inc 105 HAMRUN CIRCUIT; block:A3){{}}ORGANIZATION: HCA Inc\nDEPARTMENT: 105 HAMRUN CIRCUIT
+213{{}}2223{{}}The left submandibular lymph node shows widespread follicular hyperplasia and expansion of germinal centres with prominent tingible body macrophages. Flow cytometry showsa reactive mixed population of T and B lymphocytes. The overall morphology and pattern of immunohistochemical pattern of staining favours a reactive lymphoid (follicular) hyperplasia. However, the presence of extranodal lymphocytic inflammation, as well as, irregular expansion of some of the enlarged hyperplastic follicles is considered atypical. The case will be sent to Dr Bruno (CIT Group) for her expert opinion and a supplementary report will be issued. {{}}DOCTOR: Bruno\nORGANIZATION: CIT Group
+file4851{{}}6528{{}}Immunostains for MSI proteins (Dillard's ENVOI Pathology; block: B16){{}}ORGANIZATION: Dillard's\nDEPARTMENT: ENVOI Pathology
+335{{}}483{{}}Previous pathology (reviewed 2062 - Dr Dentel Computer Sciences Corporation Pathology): Serous borderline tumour and well to moderately differentiated ovarian serous carcinoma with metastatic tumour deposits.{{}}DATE: Previous=>2062\nDATE: 2062=>2062\nDOCTOR: Dentel\nORGANIZATION: Computer Sciences Corporation
+292{{}}5024{{}}HER2 SISH:  Performed at Wells Fargo, WEIPA HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Wells Fargo\nHOSPITAL: WEIPA HOSPITAL
+204{{}}3252{{}}HER2 SISH:  Performed at Goldman Sachs, LAKE GRACE HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Goldman Sachs\nHOSPITAL: LAKE GRACE HOSPITAL
+file18702{{}}5432{{}}The tumour appearances are similar to the previous biopsy specimen reviewed from 28/2/2066 (CHS Inc report 29R30720).{{}}DATE: 28/2/2066=>2066-02-28\nORGANIZATION: CHS Inc\nIDNUM: 29R30720
+file10646{{}}381{{}}Distribution:    HCA Inc{{}}ORGANIZATION: HCA Inc
+file10928{{}}387{{}}Distribution:     FILE-COPY,   H. J. Heinz{{}}ORGANIZATION: H. J. Heinz
+521{{}}3949{{}}HER SISH:  Performed at Peter Kiewit Sons Central, GRAYLANDS SELBY-LEMNOS & SPECIAL CARE HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Peter Kiewit Sons\nHOSPITAL: GRAYLANDS SELBY-LEMNOS & SPECIAL CARE HOSPITAL
+521{{}}4915{{}}HER SISH being performed at The ServiceMaster Company Central, INGLEWOOD AND DISTRICT HEALTH SERVICE Hospital; please see separate report.{{}}ORGANIZATION: The ServiceMaster Company\nHOSPITAL: INGLEWOOD AND DISTRICT HEALTH SERVICE
+file7978{{}}3524{{}}Immunostains for MSI proteins (M.D.C. Holdings PERI-OPERATIVE UNIT; block: A8){{}}ORGANIZATION: M.D.C. Holdings\nDEPARTMENT: PERI-OPERATIVE UNIT
+file22415{{}}4357{{}}Immunostains for MSI proteins (OGE Energy CPC Pathology; block: a20  ){{}}ORGANIZATION: OGE Energy\nDEPARTMENT: CPC Pathology
+file6514{{}}3396{{}}Immunostains for MSI proteins (Fifth Third Bancorp PARKES8; block:5  ){{}}ORGANIZATION: Fifth Third Bancorp\nDEPARTMENT: PARKES8
+file21904{{}}3375{{}}Immunostains for MSI proteins (Sun Microsystems CPC Pathology; block: A7 ){{}}ORGANIZATION: Sun Microsystems\nDEPARTMENT: CPC Pathology
+file4614{{}}5998{{}}Immunostains for MSI proteins (Federal-Mogul IMVS; block:A20  ){{}}ORGANIZATION: Federal-Mogul\nDEPARTMENT: IMVS
+file3740{{}}4607{{}}trchImmunostains for MSI proteinsh (Delta Air Lines DICKINSON 3 SOUTH; block: A9){{}}ORGANIZATION: Delta Air Lines\nDEPARTMENT: DICKINSON 3 SOUTH
+file5711{{}}5385{{}}Immunostains for MSI proteins (Brunswick Corporation 3 ARRIETTA CLOSE; block:A15  ){{}}ORGANIZATION: Brunswick Corporation\nDEPARTMENT: 3 ARRIETTA CLOSE
+29{{}}4025{{}}HER SISH:  Performed at ALLTEL Corporation, BOMBALA MULTI PURPOSE SERVICE Hospital, see separate report.{{}}ORGANIZATION: ALLTEL Corporation\nHOSPITAL: BOMBALA MULTI PURPOSE SERVICE
+29{{}}5678{{}}HER SISH is being performed at Lucent Technologies, BROOME HOSPITAL Hospital; please see separate report.{{}}ORGANIZATION: Lucent Technologies\nHOSPITAL: BROOME HOSPITAL
+518{{}}3474{{}}HER2 SISH:  Performed at Smithfield Foods, GOULBURN VALLEY HEALTH - TATURA CAMPUS Hospital, see separate report.{{}}ORGANIZATION: Smithfield Foods\nHOSPITAL: GOULBURN VALLEY HEALTH - TATURA CAMPUS
+519{{}}3506{{}}HER2 SISH:  Performed at Hormel Foods Central, NARROMINE HOSPITAL & COMMUNITY HEALTH Hospital, see separate report{{}}ORGANIZATION: Hormel Foods\nHOSPITAL: NARROMINE HOSPITAL & COMMUNITY HEALTH
+file15698{{}}4960{{}}  A repeat stain is in progress at Pacific Mutual KALGOORLIE, to follow in a supplementary report.{{}}ORGANIZATION: Pacific Mutual\nCITY: KALGOORLIE
+file15698{{}}5388{{}}BRAF immunohistochemistry was performed at Computer Sciences Corporation HEALESVILLE{{}}ORGANIZATION: Computer Sciences Corporation\nCITY: HEALESVILLE
+file23065{{}}4428{{}}Immunostains for MSI proteins (LandAmerica Financial CPC Pathology; block:   A12){{}}ORGANIZATION: LandAmerica Financial\nDEPARTMENT: CPC Pathology
+file5585{{}}4759{{}}Immunostains for MSI proteins (Walt Disney 3 ARRIETTA CLOSE; block:A14){{}}ORGANIZATION: Walt Disney\nDEPARTMENT: 3 ARRIETTA CLOSE
+file9543{{}}2312{{}}Immunostains for MSI proteins (eBay ACUTE CARE WARD; block:  2 ){{}}ORGANIZATION: eBay\nDEPARTMENT: ACUTE CARE WARD
+file7558{{}}2886{{}}Immunostains for MSI proteins (Liberty Mutual CPC Pathology; block: 2){{}}ORGANIZATION: Liberty Mutual\nDEPARTMENT: CPC Pathology
+file23251{{}}4136{{}}Immunostains for mismatch repair proteins (Aetna CPC Pathology; block: A8 ){{}}ORGANIZATION: Aetna\nDEPARTMENT: CPC Pathology
+505{{}}3226{{}}The colon, peritoneum and umbilicus show metastatic moderately to well differentiated adenocarcinoma. The morphology of the carcinoma is similar to that previously described in the right axillary and umbilical biopsies(14L01476 eBay YARRA RANGES HEALTH), and would be consistent with metastasis from a primary endometrial tumour. {{}}IDNUM: 14L01476\nORGANIZATION: eBay\nHOSPITAL: YARRA RANGES HEALTH
+file10280{{}}618{{}}d clvertaltumDistribution:  DR HORACIO HALBUR,   Liz Claiborne RY{{}}DOCTOR: HORACIO HALBUR\nORGANIZATION: Liz Claiborne
+522{{}}2510{{}}HER SISH:  Performed at UnumProvident, BOORT DISTRICT HEALTH Hospital, see separate report.{{}}ORGANIZATION: UnumProvident\nHOSPITAL: BOORT DISTRICT HEALTH
+523{{}}3420{{}}HER2 SISH:  Performed at Sonic Automotive Central, FAR NORTH HEALTH SERVICES Hospital, see separate report.{{}}ORGANIZATION: Sonic Automotive\nHOSPITAL: FAR NORTH HEALTH SERVICES
+523{{}}4368{{}}HER2 SISH:  Performed at Phelps Dodge Central, PORTLAND DISTRICT HEALTH Hospital, see separate report.{{}}ORGANIZATION: Phelps Dodge\nHOSPITAL: PORTLAND DISTRICT HEALTH
+112{{}}3178{{}}HER SISH:  Performed at Hexion Specialty Chemicals, HERBERTON HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Hexion Specialty Chemicals\nHOSPITAL: HERBERTON HOSPITAL
+117{{}}3282{{}}HER2 SISH:  Performed at KeyCorp Central, GILGANDRA MULTI PURPOSE SERVICE Hospital, see separate report.{{}}ORGANIZATION: KeyCorp\nHOSPITAL: GILGANDRA MULTI PURPOSE SERVICE
+file1163{{}}5209{{}}2230474 Immunostains for MSI proteins (State Street Corporation Forensic Medicine; block:A12){{}}ORGANIZATION: State Street Corporation\nDEPARTMENT: Forensic Medicine
+151{{}}3325{{}}HER2 SISH:  Performed at Agilent Technologies Central, DYSART HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Agilent Technologies\nHOSPITAL: DYSART HOSPITAL
+file7809{{}}4939{{}}Immunostains for MSI proteins (The First American Laverty; block: A10){{}}ORGANIZATION: The First American\nDEPARTMENT: Laverty
+file10579{{}}422{{}}Distribution:  DR Vignovich,   Thrivent Financial{{}}DOCTOR: Vignovich\nORGANIZATION: Thrivent Financial
+495{{}}4847{{}}HER SISH:  Performed at BlueLinx, NORTHAMPTON HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: BlueLinx\nHOSPITAL: NORTHAMPTON HOSPITAL
+495{{}}6248{{}}HER SISH is being performed at Entergy Corporation, MARYBOROUGH DISTRICT HEALTH SERVICE (MARYBOROUGH) Hospital, please see separate report.{{}}ORGANIZATION: Entergy Corporation\nHOSPITAL: MARYBOROUGH DISTRICT HEALTH SERVICE (MARYBOROUGH)
+file10528{{}}415{{}}Distribution:  DR Breshears,   Wachovia Corporation{{}}DOCTOR: Breshears\nORGANIZATION: Wachovia Corporation
+file18843{{}}9030{{}}Immunostains for MSI proteins (Caremark Rx CPC Pathology; block: A5){{}}ORGANIZATION: Caremark Rx\nDEPARTMENT: CPC Pathology
+file5277{{}}4985{{}}Immunostains for MSI proteins (Rohm and Haas BRIGHAM & WOMEN'S HOSPITAL; block: A5 ){{}}ORGANIZATION: Rohm and Haas\nDEPARTMENT: BRIGHAM & WOMEN'S HOSPITAL
+534{{}}336{{}}  Had laparoscopic hysterectomy for adenocarcinoma in situ in August 2063 (see Saks Incorporated review){{}}DATE: August 2063=>2063-08\nORGANIZATION: Saks Incorporated
+1214{{}}3052{{}}HER SISH:  Performed at Delta Air Lines Central, BULAHDELAH COMMUNITY HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Delta Air Lines\nHOSPITAL: BULAHDELAH COMMUNITY HOSPITAL
+2052{{}}5342{{}}HER2 SISH:  Performed at AES Corporation, BERRIGAN WAR MEMORIAL HOSPITAL/MULTI PURPOSE SERVICE Hospital, see separate report.{{}}ORGANIZATION: AES Corporation\nHOSPITAL: BERRIGAN WAR MEMORIAL HOSPITAL/MULTI PURPOSE SERVICE
+2052{{}}5573{{}}HER2 SISH:  Performed at CSX Corporation, AYR HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: CSX Corporation\nHOSPITAL: AYR HOSPITAL
+2052{{}}7286{{}}HER2 SISH:  Performed at The Timken Company, KINGSTON SOLDIERS' MEMORIAL HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: The Timken Company\nHOSPITAL: KINGSTON SOLDIERS' MEMORIAL HOSPITAL
+1908{{}}489{{}}Frozen tumour to be held at PETERBOROUGH CAMPUSfor potential genotype/ molecular mapping at Jones Apparel Group as per Prof Y Hillian (ND).{{}}HOSPITAL: PETERBOROUGH CAMPUS\nORGANIZATION: Jones Apparel Group\nDOCTOR: Y Hillian\nDOCTOR: ND
+1441{{}}7917{{}}Source of material:  Jones Apparel Group, RYLSTONE DISTRICT HOSPITAL{{}}ORGANIZATION: Jones Apparel Group\nHOSPITAL: RYLSTONE DISTRICT HOSPITAL
+1956{{}}3603{{}}Immunostains for MSI proteins (Caremark Rx AUBURN HOSPITAL & COMMUNITY HEALTH SERVICES Lab; block: A10){{}}ORGANIZATION: Caremark Rx\nHOSPITAL: AUBURN HOSPITAL & COMMUNITY HEALTH SERVICES
+1474{{}}4792{{}}HER SISH:  Performed at Estee Lauder, KARRATHA HEALTH CAMPUS Hospital, see separate report.{{}}ORGANIZATION: Estee Lauder\nHOSPITAL: KARRATHA HEALTH CAMPUS
+1474{{}}5186{{}}HER SISH:  Performed at Kimberly-Clark, TRESILLIAN FAMILY CARE CENTRE - BELMORE Hospital, see separate report.{{}}ORGANIZATION: Kimberly-Clark\nHOSPITAL: TRESILLIAN FAMILY CARE CENTRE - BELMORE
+1474{{}}7110{{}}HER SISH is being performed at Lucent Technologies, ROYAL HOBART HOSPITAL Hospital: please refer to separate report.{{}}ORGANIZATION: Lucent Technologies\nHOSPITAL: ROYAL HOBART HOSPITAL
+1976{{}}101{{}}Source of material:  Avaya, KONDININ HOSPITAL, Dr T Fellenz.{{}}ORGANIZATION: Avaya\nHOSPITAL: KONDININ HOSPITAL\nDOCTOR: T Fellenz
+1984{{}}3998{{}}Immunostains for MSI proteins (Dillard's BLACKWATER HOSPITAL Lab; block: 16){{}}ORGANIZATION: Dillard's\nHOSPITAL: BLACKWATER HOSPITAL
+2006{{}}6217{{}}The reports of the previous biopsies of retroperitoneum are noted (Atmos Energy report 48N67773 and EXMOUTH HOSPITAL Hospital report MV56777326). The core biopsy from KING EDWARD MEMORIAL HOSPITAL has been obtained and reviewed in association with the current resection specimen.{{}}ORGANIZATION: Atmos Energy\nIDNUM: 48N67773\nHOSPITAL: EXMOUTH HOSPITAL\nIDNUM: MV56777326\nHOSPITAL: KING EDWARD MEMORIAL HOSPITAL
+1489{{}}4049{{}}HER2 SISH:  Performed at TransMontaigne, PRINCE ALBERT TENTERFIELD Hospital, see separate report.{{}}ORGANIZATION: TransMontaigne\nHOSPITAL: PRINCE ALBERT TENTERFIELD
+1489{{}}5111{{}}HER2 SISH:  Performed at Henry Schein, IPSWICH HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Henry Schein\nHOSPITAL: IPSWICH HOSPITAL
+1454{{}}455{{}}Further information (from pathology, Washington Mutual): Known metastatic colorectal carcinoma to liver. {{}}ORGANIZATION: Washington Mutual
+1939{{}}3396{{}}Current tumour has been compared to the previous Fine Needle Biopsy (Fortune Brands Pathology 44U44273 (1)) and previous pathology reports (2.23HR STAY SURGICAL UNIT 44-UM-42-7305241 and SEALS Central (44744-27HB)){{}}ORGANIZATION: Fortune Brands\nIDNUM: 44U44273\nDEPARTMENT: 2.23HR STAY SURGICAL UNIT\nIDNUM: 44-UM-42-7305241\nDEPARTMENT: SEALS Central\nIDNUM: 44744-27HB
+1815{{}}6142{{}}The tissue block 11941749 All (Home Depot) and MLPA kit ME011-B2 were used for this analysis{{}}IDNUM: 11941749\nORGANIZATION: Home Depot
+1117{{}}3559{{}}Immunoperoxidase stains for MSI proteins (Sealed Air Corporation SARINA HOSPITAL){{}}ORGANIZATION: Sealed Air Corporation\nHOSPITAL: SARINA HOSPITAL
+1926{{}}4986{{}}Immunostains for MSI proteins (ToysRus GEORGE TOWN HOSPITAL AND COMMUNITY CENTRE Lab; block:A12 ){{}}ORGANIZATION: ToysRus\nHOSPITAL: GEORGE TOWN HOSPITAL AND COMMUNITY CENTRE
+1826{{}}3297{{}}HER2 SISH:  Performed at Terex Corporation, MOUNT ISA  HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Terex Corporation\nHOSPITAL: MOUNT ISA  HOSPITAL
+1545{{}}4930{{}}HER SISH:  Performed at ALLTEL Corporation, BARRABA MULTI PURPOSE SERVICE Hospital, see separate report.{{}}ORGANIZATION: ALLTEL Corporation\nHOSPITAL: BARRABA MULTI PURPOSE SERVICE
+1545{{}}6042{{}}HER-2 SISH is being performed at Group 1 Automotive, EASTERN HEALTH BLACKBURN PUBLIC SURGICAL CENTRE Hospital - see separate report.{{}}ORGANIZATION: Group 1 Automotive\nHOSPITAL: EASTERN HEALTH BLACKBURN PUBLIC SURGICAL CENTRE
+1470{{}}3261{{}}HER2 SISH:  Performed at Ashland, GAWLER HEALTH SERVICE Hospital, see separate report.{{}}ORGANIZATION: Ashland\nHOSPITAL: GAWLER HEALTH SERVICE
+2016{{}}3236{{}}HER2 SISH:  Performed at ALLTEL Corporation, WINTON HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: ALLTEL Corporation\nHOSPITAL: WINTON HOSPITAL
+1199{{}}2848{{}}HER SISH:  Performed at Boston Scientific, WENTWORTH DISTRICT HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Boston Scientific\nHOSPITAL: WENTWORTH DISTRICT HOSPITAL
+1340{{}}5235{{}}Received lx paraffin block (84F66482 - 1) from Dept of 4 JABIRU PLACE, Ashland. THOMAS EMBLING HOSPITAL Hosp, Level 4 Campus Centre, John William, INVERELL, Victoria. 5304.{{}}IDNUM: 84F66482 - 1\nDEPARTMENT: 4 JABIRU PLACE\nORGANIZATION: Ashland\nHOSPITAL: THOMAS EMBLING HOSPITAL\nROOM: Level 4 Campus Centre\nSTREET: John William\nCITY: INVERELL\nSTATE: Victoria\nZIP: 5304
+2018{{}}6242{{}}Immunostains for MSI proteins (Coca Cola HALLS CREEK HOSPITAL Lab; block: 21){{}}ORGANIZATION: Coca Cola\nHOSPITAL: HALLS CREEK HOSPITAL
+1959{{}}8177{{}}Immunostains for MSI proteins (Sanmina-SCI Forensic Medicine; block: G1){{}}ORGANIZATION: Sanmina-SCI\nDEPARTMENT: Forensic Medicine
+2046{{}}5115{{}}HER2 SISH:  Performed at Albertson's, GILGANDRA MULTI PURPOSE SERVICE Hospital, see separate report.{{}}ORGANIZATION: Albertson's\nHOSPITAL: GILGANDRA MULTI PURPOSE SERVICE
+2046{{}}5320{{}}HER2 SISH:  Performed at W.W. Grainger Inc, WILSON MEMORIAL COMMUNITY HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: W.W. Grainger Inc\nHOSPITAL: WILSON MEMORIAL COMMUNITY HOSPITAL
+1767{{}}4449{{}}Immunostains for MSI proteins (Lubrizol Corporation CHARTERS TOWERS HOSPITAL Lab; block: 10){{}}ORGANIZATION: Lubrizol Corporation\nHOSPITAL: CHARTERS TOWERS HOSPITAL
+1267{{}}5315{{}}Immunostains for MSI proteins (Dollar General ROCHESTER AND ELMORE DISTRICT HEALTH SERVICE Lab; block: B1){{}}ORGANIZATION: Dollar General\nHOSPITAL: ROCHESTER AND ELMORE DISTRICT HEALTH SERVICE
+1354{{}}3870{{}}HER SISH:  Performed at Alcoa Inc, MAREEBA HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Alcoa Inc\nHOSPITAL: MAREEBA HOSPITAL
+1354{{}}5552{{}}HER SISH is being performed at Micron Technology, TOWNSVILLE UNIVERSITY HOSPITAL Hospital and please see separate report for result.{{}}ORGANIZATION: Micron Technology\nHOSPITAL: TOWNSVILLE UNIVERSITY HOSPITAL
+1823{{}}3454{{}}HER-2 SISH is being performed and a separate report will be issued (Wachovia Corporation NOARLUNGA HEALTH SERVICE).{{}}ORGANIZATION: Wachovia Corporation\nHOSPITAL: NOARLUNGA HEALTH SERVICE
+1823{{}}4401{{}}HER-2 SISH is being performed and a separate report will be issued (BB&T Corporation COLEDALE HOSPITAL).{{}}ORGANIZATION: BB&T Corporation\nHOSPITAL: COLEDALE HOSPITAL
+1852{{}}372{{}}  2 prior WLE + SN bx (recently - path with Coca-Cola){{}}ORGANIZATION: Coca-Cola
+1186{{}}7596{{}}The tissue block 59 K84759 4 (Ameren Corporation) was used for this analysis. The tumour cell content was >70%. The BRAF mutation c.1799T>A (p.Val600Glu) was PRESENT in this sample.{{}}IDNUM: 59 K84759 4\nORGANIZATION: Ameren Corporation
+1952{{}}4622{{}}Immunostains for MSI proteins (Caremark Rx ALICE SPRINGS HOSPITAL Lab; block: 9){{}}ORGANIZATION: Caremark Rx\nHOSPITAL: ALICE SPRINGS HOSPITAL
+1614{{}}5128{{}}Immunostains for MSI proteins (BorgWarner BROKEN HILL BASE HOSPITAL Lab; block: B1){{}}ORGANIZATION: BorgWarner\nHOSPITAL: BROKEN HILL BASE HOSPITAL
+2025{{}}3012{{}}HER2 SISH:  Performed at Rohm and Haas, YARRAWONGA HEALTH Hospital, see separate report.{{}}ORGANIZATION: Rohm and Haas\nHOSPITAL: YARRAWONGA HEALTH
+2025{{}}4057{{}}HER2 SISH:  Performed at Sealed Air Corporation, GULARGAMBONE MULTI PURPOSE SERVICE Hospital, see separate report.{{}}ORGANIZATION: Sealed Air Corporation\nHOSPITAL: GULARGAMBONE MULTI PURPOSE SERVICE
+1460{{}}85{{}}Atypical pigmented lesion excised previously (slides at Pilgrim's Pride currently) involved margin, re-excision recommended{{}}ORGANIZATION: Pilgrim's Pride
+1436{{}}2635{{}}Home Depot, 8 GOOLAGONG CRESCENT, KATHERINE HOSPITAL, {{}}ORGANIZATION: Home Depot\nDEPARTMENT: 8 GOOLAGONG CRESCENT\nHOSPITAL: KATHERINE HOSPITAL
+2059{{}}5760{{}}HER SISH:  Performed at Jones Apparel Group, BALAKLAVA HOSPITALHospital, see separate report.{{}}ORGANIZATION: Jones Apparel Group\nHOSPITAL: BALAKLAVA HOSPITAL
+2050{{}}5106{{}}HER2 SISH:  Performed at AmerisourceBergen Corporation, WARWICK HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: AmerisourceBergen Corporation\nHOSPITAL: WARWICK HOSPITAL
+2050{{}}5314{{}}HER2 SISH:  Performed at AutoZone, WESTERN DISTRICT HEALTH SERVICE - PENSHURST Hospital, see separate report.{{}}ORGANIZATION: AutoZone\nHOSPITAL: WESTERN DISTRICT HEALTH SERVICE - PENSHURST
+2050{{}}7055{{}}HER2 SISH:  Performed at United Auto, TULLAMORE MULTI PURPOSE HEALTH SERVICE Hospital, see separate report.{{}}ORGANIZATION: United Auto\nHOSPITAL: TULLAMORE MULTI PURPOSE HEALTH SERVICE
+1747{{}}1955{{}}HER2 SISH:  Performed at Weyerhaeuser Company, DORRIGO MULTI PURPOSE SERVICE Hospital, see separate report.{{}}ORGANIZATION: Weyerhaeuser Company\nHOSPITAL: DORRIGO MULTI PURPOSE SERVICE
+1913{{}}7296{{}}Immunostains for MSI proteins (Visteon Corporation FRANKSTON PUBLIC SURGICAL CENTRE Lab; block: 4){{}}ORGANIZATION: Visteon Corporation\nHOSPITAL: FRANKSTON PUBLIC SURGICAL CENTRE\nIDNUM: 4
+1467{{}}4222{{}}HER SISH:  Performed at YUM! Brands, BALLARAT HEALTH SERVICES (BASE HOSPITAL) Hospital, see separate report.{{}}ORGANIZATION: YUM! Brands\nHOSPITAL: BALLARAT HEALTH SERVICES (BASE HOSPITAL)
+1874{{}}4236{{}}Immunostains for MSI proteins (Health Net PARKES DISTRICT HOSPITAL Lab; block: 10){{}}ORGANIZATION: Health Net\nHOSPITAL: PARKES DISTRICT HOSPITAL
+1353{{}}2958{{}}HER2 SISH:  Performed at Boeing, HARVEY DISTRICT HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Boeing\nHOSPITAL: HARVEY DISTRICT HOSPITAL
+1990{{}}3017{{}}HER2 SISH:  Performed at KeyCorp, MOORA HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: KeyCorp\nHOSPITAL: MOORA HOSPITAL
+1885{{}}112{{}}Source of material:  Caremark Rx, WINTON HOSPITAL, Dr. Efrain Koppen.{{}}ORGANIZATION: Caremark Rx\nHOSPITAL: WINTON HOSPITAL\nDOCTOR: Efrain Koppen
+1330{{}}80{{}}YUM! Brands{{}}ORGANIZATION: YUM! Brands
+1820{{}}3964{{}}HER2 SISH:  Performed at IKON Office Solutions, MERCY HEALTH SERVICE Hospital, see separate report.{{}}ORGANIZATION: IKON Office Solutions\nHOSPITAL: MERCY HEALTH SERVICE
+1307{{}}5291{{}}Source of material:  Baker Hughes Incorporated WYNDHAM HOSPITAL.\{{}}ORGANIZATION: Baker Hughes Incorporated\nHOSPITAL: WYNDHAM HOSPITAL
+1480{{}}3361{{}}HER2 SISH:  Performed at Schering-Plough, GREAT OCEAN ROAD HEALTH - LORNE COMMUNITY HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Schering-Plough\nHOSPITAL: GREAT OCEAN ROAD HEALTH - LORNE COMMUNITY HOSPITAL
+1473{{}}4913{{}}HER2 SISH:  Performed at Weyerhaeuser Company, MOSSMAN HOSPITAL (DOUGLAS SHIRE MULTI PURPOSE HEALTH SERVICE) Hospital, see separate report.{{}}ORGANIZATION: Weyerhaeuser Company\nHOSPITAL: MOSSMAN HOSPITAL (DOUGLAS SHIRE MULTI PURPOSE HEALTH SERVICE)
+1473{{}}6971{{}}HER2 SISH:  Performed at Valero Energy, NIMBIN MULTI PURPOSE SERVICE Hospital, see separate report.{{}}ORGANIZATION: Valero Energy\nHOSPITAL: NIMBIN MULTI PURPOSE SERVICE
+1477{{}}6980{{}}Eighty (80) x H&Estained slides labelled "88J88920 Quinton Ledebuhr" received courtesy of Dr CALVIN DEROSE, Lear Corporation, KINGAROY HOSPITAL & COMMUNITY HEALTH CENTRE Hospital, SAWTELL. Requested by A/Prof Ngarrindjeri CORADI for review at the Gynaecological Oncology Tumour Board meeting on Wednesday 27 November 2063.{{}}IDNUM: 88J88920\nPATIENT: Quinton Ledebuhr\nDOCTOR: CALVIN DEROSE\nORGANIZATION: Lear Corporation\nHOSPITAL: KINGAROY HOSPITAL & COMMUNITY HEALTH CENTRE\nCITY: SAWTELL\nDOCTOR: Ngarrindjeri CORADI\nDATE: Wednesday=>2063-11-27\nDATE: 27 November 2063=>2063-11-27
+1758{{}}4413{{}}HER2 SISH:  Performed at Johnson & Johnson, BATEMANS BAY HOSPITAL Hospital, see separate report.{{}}ORGANIZATION: Johnson & Johnson\nHOSPITAL: BATEMANS BAY HOSPITAL
+1811{{}}4918{{}}Request for opinion by Dr TOM Davie, Department of EMERGENCY, NIKE, NIMBIN MULTI PURPOSE SERVICE Hospital, MAITLAND, NT.{{}}DOCTOR: TOM Davie\nDEPARTMENT: EMERGENCY\nORGANIZATION: NIKE\nHOSPITAL: NIMBIN MULTI PURPOSE SERVICE\nCITY: MAITLAND\nSTATE: NT

@@ -1,0 +1,28 @@
+407{{}}423{{}}  Hysterectomy/BSO 18 months ago, left tubaladenocarcinoma in situ{{}}DURATION: 18 months=>P18M
+file16906{{}}211{{}}Previous gastric cancer 6 years ago - distal gastrectomy. April 2066 - right hemicolectomy for T4/N2 colorectal cancer{{}}DURATION: 6 years=>P6Y\nDATE: April 2066=>2066-04
+file5850{{}}218{{}}Low grade appendix tumour 10years ago. Pseudomyxoma peritonei (PMP) peritonectomy.{{}}DURATION: 10years=>P10Y
+file25249{{}}175{{}}   36 week pelvic/abdominal mass.{{}}DURATION: 36 week=>P36W
+280{{}}104{{}}  Positive sentinel node biopsy 2 weeks ago{{}}DURATION: 2 weeks=>P2W
+file67364{{}}138{{}}Retroperitoneal tumour (?sarcoma). Para-aortic mass. Core needle biopsy (DHM) reported high grade sarcomatoid  tumour. Previous history of a testicular germ cell tumour approximately 13yrs ago and had retroperitoneal lymph node dissection. Para-aortic tumour en block resection with infra-renal aorta.{{}}DATE: Previous=>2058-03-16\nDURATION: 13yrs=>P13Y
+file67364{{}}2478{{}}A. Fibrosis bland cartilage and epithelium. If previous testicular tumour is a germ cell tumour may represent treatment effect with mature teratoma. Discussed with the surgical reg. Previous orchidectomy performed in New Zealand 15yrs ago.{{}}DATE: Previous=>2056-03-16\nDURATION: 15yrs=>P15Y
+235{{}}177{{}}3 months{{}}DURATION: 3 months=>P3M
+291{{}}323{{}}Recurrent angiosarcoma right chest wall, in field from radiotherapy (breast cancer 13 years ago){{}}DURATION: 13 years=>P13Y
+291{{}}613{{}}  Hemithyroidectomy 45 years ago{{}}DURATION: 45 years=>P45Y
+175{{}}418{{}}  History of right knee replacement 4 wks ago{{}}DURATION: 4 wks=>P4W
+141{{}}442{{}}   (20G60877 - Leiomyosarcoma, FNCLCC grade 1 on core biopsy of soft tissue mass over left elbow in subcutaneous plane, present for five years.Recently growing.){{}}IDNUM: 20G60877\nDURATION: five years=>P5Y
+400{{}}378{{}}  Excised 20 yrs ago (path unknown) recurrent{{}}DURATION: 20 yrs=>P20Y
+1830{{}}85{{}}Previous melanoma on back (20 years ago){{}}DURATION: 20 years=>P20Y
+1449{{}}325{{}}Lung cancer resected two weeks ago{{}}DURATION: two weeks=>P2W
+2058{{}}506{{}}  3 week history of abdominal distension{{}}DURATION: 3 week=>P3W
+2058{{}}547{{}}  10 dayhistory of constipation{{}}DURATION: 10 day=>P10D
+1968{{}}322{{}}Grade 1 endometrioid adenocarcinoma of the left ovary whilst 20weeks pregnant in 2063{{}}DURATION: 20weeks=>P20W\nDATE: 2063=>2063-14
+1143{{}}431{{}}  H/T, IDH (CABG 15 years ago), AF, T2DM. {{}}DURATION: 15 years=>P5Y
+1735{{}}298{{}}  Previous grade 2 oligo from same area resected 5 years ago.{{}}DURATION: 5 years=>P5Y
+1702{{}}303{{}}2 months of progressive decreasing visual acuity{{}}DURATION: 2 months=>P2M
+1702{{}}352{{}}  18 months hypocortisolaemia   Suprasellar lesion{{}}DURATION: 18 months=>P18M
+1098{{}}374{{}}  Tumour debulking of recurrence of ovarian cancer 23yrs ago{{}}DURATION: 23yrs=>P23Y
+753{{}}375{{}}  Smoker 40/year pack history{{}}DURATION: 40/year=>P40Y
+1940{{}}86{{}}  3 years post menopausal bleeding{{}}DURATION: 3 years=>P3Y
+1974{{}}114{{}}  Neoadjuvent chemoRTx completed 9-10 weeks ago{{}}DURATION: 9-10 weeks=>P9.5W
+1969{{}}434{{}}  Smoke >50 year pack history{{}}DURATION: 50 year=>P50Y
+1226{{}}469{{}}  Symptoms for 6years{{}}DURATION: 6years=>P6Y

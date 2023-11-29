@@ -3,3 +3,9 @@
 !download.sh
 !rm_download.sh
 !zips
+!aug
+!aug/dataset
+!genaug_*
+!org*
+!du*
+!countr

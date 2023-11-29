@@ -13,7 +13,7 @@ TIMES_CATES = ["DATE", "TIME", "DURATION", "SET"]
 FILE_TOKENIZERS = ['\.  ', '\n']
 PREFIX_NUM = 0
 raws = {
-    "train": ["first", "second"], 
+    "train": ["first", "second", "aug"], 
     "valid": ["valid"],
 }
 
@@ -80,8 +80,9 @@ def main(**kwargs):
             file_full_path = f"{dir_full_path}/{file}"
             with open(file_full_path, 'r') as f:
                 doc = f.read()
-            prefixes = ["" for _ in range(PREFIX_NUM)]
-            prefix = ""
+            if PREFIX_NUM:
+                prefixes = ["" for _ in range(PREFIX_NUM)]
+                prefix = ""
             break_points = getBreakPoints(doc)
 
             answers_in_file = answers[file.replace(".txt", "")]
@@ -116,12 +117,13 @@ def main(**kwargs):
                         data_inline.append([file.replace(".txt", ""), str(tmp_text_starti), tmp_text, r"\n".join(final_ans)])
                     else:
                         data_inline.append([file.replace(".txt", ""), str(tmp_text_starti), f"[PREFIX_START]{prefix.strip()}[PREFIX_END]{tmp_text}", r"\n".join(final_ans)])
-                prefixes = getPrefixes(tmp_text, prefixes)
-                prefix = ". ".join(filter(lambda x: x!="", prefixes))
+                if PREFIX_NUM:
+                    prefixes = getPrefixes(tmp_text, prefixes)
+                    prefix = ". ".join(filter(lambda x: x!="", prefixes))
     if PREFIX_NUM == 0:
-        write_to_gsv(data_inline, f"./{kwargs['split']}.gsv")
+        write_to_gsv(data_inline, f"./{kwargs['split']}{'_aug' if 'aug' in raws[kwargs['split']] else ''}.gsv")
     else:
-        write_to_gsv(data_inline, f"./{kwargs['split']}_{PREFIX_NUM}prefix.gsv")
+        write_to_gsv(data_inline, f"./{kwargs['split']}_{PREFIX_NUM}prefix{'_aug' if 'aug' in raws[kwargs['split']] else ''}.gsv")
                     
 if __name__ == "__main__":
     print("[Preprocess] train.gsv start.")
