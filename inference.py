@@ -14,7 +14,7 @@ def main():
     model.resize_token_embeddings(len(tokenizer))
     model.eval()
     model.to(args.device)
-    writeValidPredictions(model, tokenizer, path = os.path.join(args.output_dir, "answer.txt"), dataset = args.infer_file)
+    writeValidPredictions(model, tokenizer, path = os.path.join(args.output_dir, "answer.txt"), dataset = args.infer_file, batch_size=args.batch_size)
 
 if __name__ == "__main__":
     main()
