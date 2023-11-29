@@ -53,9 +53,19 @@ def parse_args():
         help="Learning rate.")
     
     parser.add_argument(
+        "--use_scheduler", "-s",
+        action="store_true", default=False,
+        help="Use scheduler or not.")
+    
+    parser.add_argument(
         "--device", "-d",
         type=str, default="cuda:1",
         help="Device.")
+    
+    parser.add_argument(
+        "--use_log", "-l",
+        action="store_true", default=False,
+        help="Log file or not.") 
     
     args = parser.parse_args()
     

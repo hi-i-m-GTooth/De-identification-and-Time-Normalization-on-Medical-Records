@@ -9,6 +9,7 @@ from gtokenizer import GTokenizer
 import torch
 from torch.utils.data import DataLoader
 from torch.optim import AdamW
+from torch.optim.lr_scheduler import LambdaLR
 
 from gaicup import collate_batch_with_prompt_template, OpenDeidBatchSampler
 from gaicup import aicup_predict
@@ -65,7 +66,7 @@ def getModel(tokenizer):
     model = AutoModelForCausalLM.from_pretrained(PLM, revision=REVISION, config=config)
     return model
 
-def trainModel(model, dataloader, valid_dataloader, optimizer, epoch, device, exp_name, save_epoch):
+def trainModel(model, dataloader, valid_dataloader, optimizer, scheduler, epoch, device, exp_name, save_epoch, use_log):
     model.to(device)
     model.train()
     start_time = time.time()
@@ -73,6 +74,12 @@ def trainModel(model, dataloader, valid_dataloader, optimizer, epoch, device, ex
     print(f"{Fore.GREEN}Start Training, Date Time: {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}{Style.RESET_ALL}")
     prev_time = start_time
     progress_bar = trange(epoch, desc="Epoch")
+    if use_log:
+        os.makedirs(f"./models/{exp_name}", exist_ok=True)
+        log_path = f"./models/{exp_name}/{exp_name}.log"
+        log_f = open(log_path, 'w', encoding='utf8')
+        log_f.write(f"Start Training, Date Time: {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}\n")
+        log_f.close()
 
     for ep in progress_bar:
         progress_bar.set_description(f"{Fore.WHITE}{Back.LIGHTGREEN_EX}[Epoch {ep+1}/{epoch}]{Style.RESET_ALL}")
@@ -94,6 +101,7 @@ def trainModel(model, dataloader, valid_dataloader, optimizer, epoch, device, ex
             total_loss += loss.item()
             loss.backward()
             optimizer.step()
+            scheduler.step()
 
         avg_train_loss = total_loss / len(dataloader)
         log_str += f"Average train loss: {Fore.BLUE}{round(avg_train_loss, 7):<10}{Style.RESET_ALL}"
@@ -113,8 +121,15 @@ def trainModel(model, dataloader, valid_dataloader, optimizer, epoch, device, ex
                     total_loss += loss.item()
                 avg_valid_loss = total_loss / len(valid_dataloader)
                 log_str += f" Average valid loss: {Fore.CYAN}{round(avg_valid_loss, 7):<10}{Style.RESET_ALL}"
+
             
             model.save_pretrained(f"./models/{exp_name}/{exp_name}_{ep+1}")
+            if use_log:
+                log_f = open(log_path, 'a', encoding='utf8')
+                log_f.write(f"[Epoch {ep+1}/{epoch}]" + log_str.replace(f"{Fore.CYAN}", "").replace(f"{Fore.BLUE}", "").replace(f"{Style.RESET_ALL}", "") + '\n')
+                log_f.close()
+    
+
 
         cur_time = time.time()
         log_str += f" Time: {Fore.YELLOW}{int((cur_time - prev_time) / 60)}m {int((cur_time - prev_time)%60)}s{Style.RESET_ALL} Date Time: {Fore.YELLOW}{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}{Style.RESET_ALL}"
@@ -125,6 +140,10 @@ def trainModel(model, dataloader, valid_dataloader, optimizer, epoch, device, ex
     log_str = f"{Fore.GREEN}Finish Total time: {round((cur_time - start_time)/60, 2)}m{Style.RESET_ALL}"
     print(log_str)
     print(f"{Fore.GREEN}Finish Date Time: {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}{Style.RESET_ALL}")
+    if use_log:
+        log_f = open(log_path, 'a', encoding='utf8')
+        log_f.write(log_str.replace(f"{Fore.CYAN}", "").replace(f"{Fore.BLUE}", "").replace(f"{Style.RESET_ALL}", "").replace(f"{Fore.YELLOW}", "").replace(f"{Fore.GREEN}", "") + '\n')
+        log_f.close()
 
 def writeValidPredictions(model, tokenizer, path = "./submissions/test_answer.txt", dataset = None, delimiter = '\t'):
     if not dataset:
@@ -173,11 +192,11 @@ def Main():
     
     model = getModel(tokenizer)
     optimizer = AdamW(model.parameters(), lr=args.lr)
+    shceduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0, num_training_steps=len(dataloader) * args.epoch) if args.use_scheduler else None
 
     model.resize_token_embeddings(len(tokenizer))
     model.to(device)
-
-    trainModel(model, dataloader, valid_dataloader, optimizer, args.epoch, device, exp_name, args.save_epoch)
+    trainModel(model, dataloader, valid_dataloader, optimizer, shceduler, args.epoch, device, exp_name, args.save_epoch, args.use_log)
     # save model
     model.save_pretrained(f"./models/{exp_name}/{exp_name}_final")
     
