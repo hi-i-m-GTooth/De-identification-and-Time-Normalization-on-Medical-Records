@@ -18,7 +18,11 @@ def collate_batch_with_prompt_template(batch, tokenizer, template = "<|endoftext
 def my_input():
     input()
 def aicup_predict(model, tokenizer, input, template = "<|endoftext|> __CONTENT__\n\n####\n\n"):
-    seeds = [template.replace("__CONTENT__", data['content']) for data in input]
+    try:
+        seeds = [template.replace("__CONTENT__", data['content']) for data in input]
+    except:
+        bugs = [data for data in input if data['content'] is None]
+        print(bugs); exit()
     sep = tokenizer.sep_token
     eos = tokenizer.eos_token
     pad = tokenizer.pad_token

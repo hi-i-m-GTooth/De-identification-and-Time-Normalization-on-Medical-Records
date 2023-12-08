@@ -31,6 +31,29 @@ def tokenizeFile(filepath):
     
     return tokenized_lines
 
+def tokenizeString(filetext):
+    """ This function will tokenize the file content and get tokenized result lines
+
+    Args:
+        filepath (string): file path of the file to be tokenized
+
+    Returns:
+        list of list: tokenized result lines (start_index, text)
+    """
+    tokenized_lines = []
+    tmp_text, tmp_text_starti = "", 0
+    for i, c in enumerate(filetext):
+        if c not in file_tokenizers:
+            tmp_text += c
+        else:
+            tmp_text = tmp_text.strip()
+            if tmp_text:
+                if c != '\n':
+                    tmp_text += c
+                tokenized_lines.append([tmp_text_starti, tmp_text])
+            tmp_text, tmp_text_starti = "", i + 1
+    
+    return tokenized_lines
 
 def findAndNormalizeDates(input_string):
     """ Find Dates and return the list of list (original_text, normalized_text)
