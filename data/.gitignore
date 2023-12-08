@@ -1,5 +1,6 @@
 *
 !preprocess.py
+!preprocess_test.py
 !run_preprocess.sh
 !cate.txt
 !train.gsv
