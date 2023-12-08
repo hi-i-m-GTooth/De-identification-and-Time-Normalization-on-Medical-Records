@@ -101,7 +101,8 @@ def trainModel(model, dataloader, valid_dataloader, optimizer, scheduler, epoch,
             total_loss += loss.item()
             loss.backward()
             optimizer.step()
-            scheduler.step()
+            if scheduler:
+                scheduler.step()
 
         avg_train_loss = total_loss / len(dataloader)
         log_str += f"Average train loss: {Fore.BLUE}{round(avg_train_loss, 7):<10}{Style.RESET_ALL}"
@@ -157,6 +158,7 @@ def writeValidPredictions(model, tokenizer, path = "./submissions/test_answer.tx
     
     valid_list = list(valid_data['train'])
 
+    os.makedirs(os.path.dirname(path), exist_ok=False)
     with open(path, 'w', encoding='utf8') as f:
         for i in tqdm(range(0, len(valid_list), batch_size)):
             with torch.no_grad():
