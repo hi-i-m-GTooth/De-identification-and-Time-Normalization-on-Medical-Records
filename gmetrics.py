@@ -64,9 +64,9 @@ class Recall(Metrics):
         """
         de_recalls, norm_recalls = {}, {}
         for key in self.label_sets["de"]:
-            de_recalls[key] = len(self.label_sets["de"][key].intersection(self.predict_sets["de"][key])) / (len(self.label_sets["de"][key]))+1e-7
+            de_recalls[key] = len(self.label_sets["de"][key].intersection(self.predict_sets["de"][key])) / (len(self.label_sets["de"][key])+1e-7)
         for key in self.label_sets["norm"]:
-            norm_recalls[key] = len(self.label_sets["norm"][key].intersection(self.predict_sets["norm"][key])) / len(self.label_sets["norm"][key])+1e-7
+            norm_recalls[key] = len(self.label_sets["norm"][key].intersection(self.predict_sets["norm"][key])) / (len(self.label_sets["norm"][key])+1e-7)
         return de_recalls, norm_recalls
     
 class MacroF1Score:
@@ -97,25 +97,62 @@ def main():
     de_macro_f1_score, norm_macro_f1_score = MacroF1Score(precision, recall).calculate()
     de_precisions, norm_precisions = precision.calculate()
     de_recalls, norm_recalls = recall.calculate()
-    # DE
-    DE_TYPE = precision.label_sets["de"].keys()
-    print(f"{'PHITYPE':<20} {'Precision':<20} {'Recall':<20} {'F1-Macro':<20} {'Support':<20}")
-    print("=======================================================================================")
-    for key in DE_TYPE:
-        print(f"{key:<20} {de_precisions[key]:<20.4f} {de_recalls[key]:<20.4f} {de_macro_f1_score[key]:<20.4f} {len(precision.label_sets['de'][key]):<20}")
-    print("=======================================================================================")
-    print(f"{'Macro-Average':<20} {sum(de_precisions.values())/len(de_precisions):<20.4f} {sum(de_recalls.values())/len(de_recalls):<20.4f} {sum(de_macro_f1_score.values())/len(de_macro_f1_score):<20.4f} {sum([len(s) for s in precision.label_sets['de'].values()]):<20}")
+    Trans = False
 
-    print("\n")
+    experiment_name = args.predict_file.split('/')[-2]
 
-    # NORM
-    NORM_TYPE = precision.label_sets["norm"].keys()
-    print(f"{'PHITYPE':<20} {'Precision':<20} {'Recall':<20} {'F1-Macro':<20} {'Support':<20}")
-    print("=======================================================================================")
-    for key in NORM_TYPE:
-        print(f"{key:<20} {norm_precisions[key]:<20.4f} {norm_recalls[key]:<20.4f} {norm_macro_f1_score[key]:<20.4f} {len(precision.label_sets['norm'][key]):<20}")
-    print("=======================================================================================")
-    print(f"{'Macro-Average':<20} {sum(norm_precisions.values())/len(norm_precisions):<20.4f} {sum(norm_recalls.values())/len(norm_recalls):<20.4f} {sum(norm_macro_f1_score.values())/len(norm_macro_f1_score):<20.4f} {sum([len(s) for s in precision.label_sets['norm'].values()]):<20}")
+    if not Trans:
+        # DE
+        DE_TYPE = precision.label_sets["de"].keys()
+        print(f"{'PHITYPE':<20} {'Precision':<20} {'Recall':<20} {'F1-Macro':<20} {'Support':<20}")
+        print("=======================================================================================")
+        for key in DE_TYPE:
+            print(f"{key:<20} {de_precisions[key]:<20.4f} {de_recalls[key]:<20.4f} {de_macro_f1_score[key]:<20.4f} {len(precision.label_sets['de'][key]):<20}")
+        print("=======================================================================================")
+        print(f"{'Macro-Average':<20} {sum(de_precisions.values())/len(de_precisions):<20.4f} {sum(de_recalls.values())/len(de_recalls):<20.4f} {sum(de_macro_f1_score.values())/len(de_macro_f1_score):<20.4f} {sum([len(s) for s in precision.label_sets['de'].values()]):<20}")
+
+        print("\n")
+
+        # NORM
+        NORM_TYPE = precision.label_sets["norm"].keys()
+        print(f"{'PHITYPE':<20} {'Precision':<20} {'Recall':<20} {'F1-Macro':<20} {'Support':<20}")
+        print("=======================================================================================")
+        for key in NORM_TYPE:
+            print(f"{key:<20} {norm_precisions[key]:<20.4f} {norm_recalls[key]:<20.4f} {norm_macro_f1_score[key]:<20.4f} {len(precision.label_sets['norm'][key]):<20}")
+        print("=======================================================================================")
+        print(f"{'Macro-Average':<20} {sum(norm_precisions.values())/len(norm_precisions):<20.4f} {sum(norm_recalls.values())/len(norm_recalls):<20.4f} {sum(norm_macro_f1_score.values())/len(norm_macro_f1_score):<20.4f} {sum([len(s) for s in precision.label_sets['norm'].values()]):<20}")
+    else:
+         # DE
+        DE_TYPE = precision.label_sets["de"].keys()
+        print("Metrics\t"+'\t'.join(DE_TYPE))
+        precisions = [str(round(de_precisions[key], 4)) for key in DE_TYPE]
+        precisions.insert(0, "Precision")
+        print('\t'.join(precisions))
+        recalls = [str(round(de_recalls[key], 4)) for key in DE_TYPE]
+        recalls.insert(0, "Recall")
+        print('\t'.join(recalls))
+        f1s = [str(round(de_macro_f1_score[key], 4)) for key in DE_TYPE]
+        f1s.insert(0, "F1-Macro")
+        print('\t'.join(f1s))
+
+        print("\n")
+
+        # NORM
+        NORM_TYPE = precision.label_sets["norm"].keys()
+        print("Metrics\t"+'\t'.join(NORM_TYPE))
+        precisions = [str(round(norm_precisions[key], 4)) for key in NORM_TYPE]
+        precisions.insert(0, "Precision")
+        print('\t'.join(precisions))
+        recalls = [str(round(norm_recalls[key], 4)) for key in NORM_TYPE]
+        recalls.insert(0, "Recall")
+        print('\t'.join(recalls))
+        f1s = [str(round(norm_macro_f1_score[key], 4)) for key in NORM_TYPE]
+        f1s.insert(0, "F1-Macro")
+        print('\t'.join(f1s))
+
+    print(f"\n\nExperiment Name: {experiment_name}")
+
+
 
 if __name__ == "__main__":
     main()
