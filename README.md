@@ -1,4 +1,6 @@
 # De-identification-and-Time-Normalization-on-Medical-Records
+![image](https://github.com/hi-i-m-GTooth/De-identification-and-Time-Normalization-on-Medical-Records/assets/31925572/3e4d82f0-c201-432b-a09f-b4b02176a3c7)
+
 ## Competition Page
 * [Competition - CodaLab](https://codalab.lisn.upsaclay.fr/competitions/15425#participate-get_starting_kit)
 * [Information Note - Hackmd](https://hackmd.io/@GTooth/ryJAkhuVa)
