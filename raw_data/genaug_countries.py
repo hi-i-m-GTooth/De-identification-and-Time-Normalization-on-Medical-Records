@@ -19,7 +19,19 @@ FORMAT_ANS_PAIRS = [
 
 
 def getCountries():
-    return list(map(lambda x: x.name, list(pycountry.countries)))
+    rlt = []
+    for country in list(pycountry.countries):
+        if hasattr(country, "common_name"):
+            rlt.append(country.common_name)
+        if hasattr(country, "official_name"):
+            rlt.append(country.official_name)
+        if hasattr(country, "name"):
+            rlt.append(country.name)
+        if hasattr(country, "alpha_2"):
+            rlt.append(country.alpha_2)
+        if hasattr(country, "alpha_3"):
+            rlt.append(country.alpha_3)
+    return rlt
 
 def main():
     data_f = open("./aug/dataset/countries.txt", "w")

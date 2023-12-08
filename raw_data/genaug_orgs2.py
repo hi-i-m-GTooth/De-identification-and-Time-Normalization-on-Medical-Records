@@ -25,7 +25,7 @@ def getTextAnsOrgTrips():
 
 def getOrgs():
     orgs = []
-    with open("./orgs_list3.txt", "r") as f:
+    with open("./orgs_list.txt", "r") as f:
         lines = f.readlines()
         for line in lines:
             orgs.append(line.strip())
@@ -33,27 +33,16 @@ def getOrgs():
 
 
 def main():
-    data_f = open("./aug/dataset/orgs.txt", "w")
-    ans_f = open("./aug/org_answer.txt", "w")
+    data_f = open("./aug2/dataset/orgs.txt", "w")
+    ans_f = open("./aug2/org_answer.txt", "w")
     data_fpointer = 0
 
     orgs = getOrgs()
-    trips = getTextAnsOrgTrips()
-    for _ in range(2):
+    for _ in range(5):
         for org in orgs:
-            trip = random.choice(trips)
-            old_org = trip["org"]
-            text = trip["text"].replace(old_org, org) + "\n"
+            text = org + "\n"
             data_f.write(text)
-            for ans in trip["answers"]:
-                cate, content = ans
-                start = text.find(content)
-                end = start + len(content) - 1
-                if "=>" in content:
-                    content, content2 = content.split("=>")
-                    content = f"{content}\t{content2}"
-                ans_f.write(f"orgs\t{cate}\t{data_fpointer+start}\t{data_fpointer+end}\t{content}\n")
-            start = text.find(org)
+            start = 0
             end = start + len(org) - 1
             ans_f.write(f"orgs\tORGANIZATION\t{data_fpointer+start}\t{data_fpointer+end}\t{org}\n")
             data_fpointer += len(text)
