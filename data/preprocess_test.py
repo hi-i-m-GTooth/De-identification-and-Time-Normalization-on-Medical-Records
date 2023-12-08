@@ -12,16 +12,14 @@ os.chdir(cur_dir)
 
 TIMES_CATES = ["DATE", "TIME", "DURATION", "SET"]
 FILE_TOKENIZERS = ['\.  ', '\n']
-PREFIX_NUM = 0
+PREFIX_NUM = 5
 raws = {
-    "train": ["first", "second"], 
-    "valid": ["valid"],
+    "test": ["test"],
 }
 
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--prefix_num", type=int, default=0)
-    parser.add_argument("--aug", action="store_true")
     args = parser.parse_args()
     return args
 
@@ -82,7 +80,6 @@ def main(**kwargs):
     for dir in raws[kwargs["split"]]:
         dir_full_path = f"../raw_data/{dir}/dataset"
         files = os.listdir(dir_full_path)
-        answers = read_answers(f"../raw_data/{dir}/answer.txt")
         
         for file in tqdm(files):
             file_full_path = f"{dir_full_path}/{file}"
@@ -93,38 +90,19 @@ def main(**kwargs):
                 prefix = ""
             break_points = getBreakPoints(doc)
 
-            answers_in_file = answers[file.replace(".txt", "")]
-            ans_index = 0
-
             for bp_i in range(len(break_points)-1):
                 bp, bp_end = break_points[bp_i], break_points[bp_i+1]
                 tmp_text = doc[bp+1:bp_end]
                 tmp_text_starti = bp+1
 
-                if tmp_text.strip() == '':
+                if tmp_text.strip() == '' or tmp_text.strip() == 'N/A' or tmp_text.strip() == 'None':
                     continue
-                is_got_answer, anses = False, []
-                while ans_index < len(answers_in_file) and \
-                    bp <= answers_in_file[ans_index]["start"] and bp_end >= answers_in_file[ans_index]["end"]:
-                    anses.append(answers_in_file[ans_index])
-                    ans_index += 1
-                    is_got_answer = True
-                if not is_got_answer:
-                    if PREFIX_NUM == 0:
-                        data_inline.append([file.replace(".txt", ""), str(tmp_text_starti), tmp_text, "PHI: NULL"])
-                    else:
-                        data_inline.append([file.replace(".txt", ""), str(tmp_text_starti), f"[PREFIX_START]{prefix.strip()}[PREFIX_END]{tmp_text}", "PHI: NULL"])
+
+                if PREFIX_NUM == 0:
+                    data_inline.append([file.replace(".txt", ""), str(tmp_text_starti), tmp_text, "TEST: TEST"])
                 else:
-                    final_ans = []
-                    for ans in anses:
-                        if ans['cate'] in TIMES_CATES:
-                            final_ans.append(f"{ans['cate']}: {ans['text']}=>{ans['text2']}")
-                        else:
-                            final_ans.append(f"{ans['cate']}: {ans['text']}")
-                    if PREFIX_NUM == 0:
-                        data_inline.append([file.replace(".txt", ""), str(tmp_text_starti), tmp_text, r"\n".join(final_ans)])
-                    else:
-                        data_inline.append([file.replace(".txt", ""), str(tmp_text_starti), f"[PREFIX_START]{prefix.strip()}[PREFIX_END]{tmp_text}", r"\n".join(final_ans)])
+                    data_inline.append([file.replace(".txt", ""), str(tmp_text_starti), f"[PREFIX_START]{prefix.strip()}[PREFIX_END]{tmp_text}", "TEST: TEST"])
+                
                 if PREFIX_NUM:
                     prefixes = getPrefixes(tmp_text, prefixes)
                     prefix = ". ".join(filter(lambda x: x!="", prefixes))
@@ -143,9 +121,5 @@ def main(**kwargs):
 if __name__ == "__main__":
     args = parse_args()
     PREFIX_NUM = args.prefix_num
-    if args.aug:
-        raws["train"].append("aug")
-    print("[Preprocess] train.gsv start.")
-    main(split="train")
-    print("[Preprocess] valid.gsv start.")
-    main(split="valid")
+    print("[Preprocess] test.gsv start.")
+    main(split="test")
