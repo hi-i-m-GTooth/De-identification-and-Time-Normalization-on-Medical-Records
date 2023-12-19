@@ -46,7 +46,7 @@ bash run_metrics.sh [PATH_TO_PREDICTION_FILE]
 ---
 ## 7. Reproduce Final Prediction
 We merged multiple models since each model is talented at different tasks. The evaluation results are in the [Model Selection Sheet](https://docs.google.com/spreadsheets/d/1tddZNOPtSl4XWwsowrzAaIiyUH-IJ0MBUie6D6jRX58/edit?usp=sharing).  
-Also, note that since ORGANIZATION label seldom exists in training data, we directly collect [external organization list](https://www.sec.gov/files/rules/other/4-460list.htm) to match ORGANIZATION existing in the list.
+Also, note that since COUNTRY label seldom exists in training data, we directly collect [pycountry.countries](https://github.com/pycountry/pycountry) to match COUNTRY existing in the list.
 ### 7-1. Download Data & Preprocess
 Just as mentioned in **Sec 1.** & **Sec 2.**.
 ### 7-2. Download Checkpoints 
