@@ -4,6 +4,12 @@
 ## Competition Page
 * [Competition - CodaLab](https://codalab.lisn.upsaclay.fr/competitions/15425#participate-get_starting_kit)
 * [Information Note - Hackmd](https://hackmd.io/@GTooth/ryJAkhuVa)
+## 0. Environments
+* Python = 3.10
+* OS: Ubuntu 22.04.3 LTS
+* GPU: NVIDIA RTX A6000 49140MB * 1 / NVIDIA RTX A5000 24564MB * 5
+* `pip install requirements.txt`
+
 ## 1. Raw Data Download & Rename
 You'll get `first`, `second` and `valid` under `raw_data` dir.
 ```
