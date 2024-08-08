@@ -56,7 +56,7 @@ Also, note that since COUNTRY label seldom exists in training data, we directly 
 ### 7-1. Download Data & Preprocess
 Just as mentioned in **Sec 1.** & **Sec 2.**.
 ### 7-2. Download Checkpoints 
-Download checkpoints from [GDrive](https://drive.google.com/drive/folders/1v4yNaS4LIoXchaYl4sNYwidCW5FCurM0?usp=drive_link) and place them into `models`.  
+Download checkpoints from [GDrive](https://drive.google.com/drive/folders/1-dBfEMU9_3mQZy4Gh-0i8lT3agB8quz5?usp=sharing) and place them into `models`.  
 For each checkpoint, place it as `models/CHECKPOINT_DIR`.
 ### 7-2. Inference
 You'll get `final_submissions/result/answer.txt`.  
